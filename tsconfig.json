@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "incremental": true,
+    "sourceMap": false,
+    "strict": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "noEmitOnError": false,
+    "importHelpers": false,
+    "module": "commonjs",
+    "target": "es6",
+    "baseUrl": "src",
+    "outDir": "./lib",
+    "lib": [
+      "dom",
+      "ES6",
+      "ES2021"
+    ],
+    "types": ["node"],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./typings",
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+    }
+  },
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/lib",
+    "**/dist",
+    "**/test",
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  }
+}
